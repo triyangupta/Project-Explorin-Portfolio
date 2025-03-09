@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+.navbar{
+    /* width: 100%; */
+    height: 10vh;
+    background-color: #172937;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Imglogo{
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 10vh;
+}
+.Imglogo img{
+    border-radius:50%;
+    width:30px;
+    height: 30px;
+    background-color: white;
+    color: white;
+}
+.logotext{
+    padding: 7px;
+    font-size:small;
+    color: white;
+}
+.navbarlist{
+    color: white;
+}
+.navbarlist:hover{
+   text-decoration:underline;
+   text-decoration-color: rgb(33, 172, 218) ;
+}
+a{
+    text-decoration: none;
+}
+.Resume{
+    text-align: center;
+    color: white;
+    border: 0.1px solid orangered;
+    border-radius: 5px;
+    padding: 2.5px;
+}
+.hero{
+    background-color: #172937;
+    height: 50vh;
+    display: flex; 
+}
+.intro{
+    margin-left: 10%;
+    width: 55%;
+    height: 50vh;
+    color: white;
+    display: block;
+    /* background-color: black; */
+}
+.hero-para{
+    color: #F2F2F2CC;
+    font-size: large;
+}
+.intro h1{
+    display: block;
+    padding-top:70px ;
+ margin-left: 3%;
+}
+.hero-sub {
+    font-size:x-large;  
+}
+.hero-sub span{
+    color: orange;
+}
+.imgintro{
+    width: 35vh;
+    height: 35vh;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    
+}
+body{
+    background-color: #fff6c9e9;
+}
+.container{
+    /* display: flex; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    /* background-color: #fff6c9e9; */
+}
+.container h1,h2{
+    padding-bottom:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill{
+    color: #F37021;
+}
+.skillslist{
+    background-color: #F37021;
+    width: 80%;
+    height: 30vh;
+    margin-left: 10%;
+    border-radius: 10px;
+  
+}
+.skillslist .list{
+    /* flex-wrap: wrap; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 100px;
+  height: 2px;
+  border-radius: 100px;
+  background-color: white;
+}
+.skillstable {
+    width: 80%;
+    height: 28vh;
+    margin: 2%  10%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.964);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgb(143, 142, 142);
+}
+.skill-list {
+    display: flex;
+    align-items: center;
+    padding: 8px 22px;
+    border-radius: 20px;
+    background-color: white;
+    border:1px solid orange;
+    font-size: 14px;
+}
+.linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 42.5%;
+    width: 150px;
+    height: 25px;
+    color: white;
+    border-radius: 5px;
+    background-color: #F37021;
+}
+.linkedin:hover{
+    zoom: 1.2;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 45vh;
+    background-color: rgba(251, 245, 245, 0.964);
+    box-shadow: 5px 5px 5px rgb(143, 142, 142);
+    border-radius: 10px;
+    gap: 35px;
+}
+.play{
+    width: 22vw;
+    height: 27vh;
+    background-color: #172937;
+    /* display: flex;   */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.textvideo{
+    padding: 10px;
+    width: 22vw;
+    height: 12vh;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #292a2b;
+}
+.textvideo h4{
+    color: #000000;
+}
+.topic{
+    font-size: medium;
+    font-weight: 700;
+}
+.iframe{
+    width: 22vw;
+    height: 27vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.projectname{
+    width: 85vw;
+    height: 55vh;
+    margin-top: 2.5%;
+    margin-left: 7.5%;
+    background-color: rgba(251, 245, 245, 0.964);   
+    gap: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectnamelist{
+    box-shadow: 0px 5px 5px  rgb(143, 142, 142);
+}
+.projectimg img{
+    width: 25vw;
+    height: 25vh;
+   border-top-left-radius:10px ;
+   border-top-right-radius:10px ;
+}
+.projectdescribe{
+    width: 25vw;
+    height: 20vh;
+    padding-top: 10px;
+}
+.projectdescribe h3 {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    color: rgb(255, 157, 0);
+}
+.projectdescribe h5,p{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.education{
+    width:80% ;
+    height: 40vh;
+    margin-left: 10%;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.educationlist{
+    width: 35%;
+    height: 15vh;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 18px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    /* justify-content: end; */
+}
+.year{
+    color: #F37021;
+    padding-bottom:8px;
+}
+.educationlist .img{
+    display: flex;
+    width: 8vw;
+    height: 10vh;
+    margin-left: 25px;
+    border-radius: 50%;
+    background-color: #f4f2f2;
+}
+
+
+
+.footer{
+    text-align: center;
+    height: 40vh;
+    background-color: #172937;
+    margin-top: 30px;
+    margin-bottom: 500px;
+    
+}
+.footer h1{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    color: #F37021;
+}
+.footerdetail{
+   text-align: center;
+   color: white;
+   /* padding-bottom: 10px; */
+}
+.social-link {
+  margin: 40px;
+}
+.social-link a{
+    padding: 4px;
+    border: 2px solid #F37021;
+    color: white;
+    border-radius: 8px;
+    
+
+}
+</style>
+<body>
+
+
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="Imglogo">
+                    <img class="img" src="#" alt="img">
+                    <div class="logotext"> Explorin Academy</div>
+                </div>
+                <div><a class="navbarlist" href="#">Skill</a></div>
+                <div><a  class="navbarlist" href="#">Progress</a></div> 
+                <div><a  class="navbarlist" href="#">Projects</a></div>
+                <div><a  class="navbarlist" href="#">Education</a></div>
+                <div><a  class="navbarlist" href="#">Contact</a></div>
+                <div><a class="Resume" href="#">Resume</a></div>
+            </div>
+             <hr>
+        </nav>
+       </div>
+    </header>
+
+
+
+    <section class="hero">
+        <div class="intro">
+
+            <h1>Hi, I am Mr Assignment</h1><br>
+            <p class="hero-sub">An integral part of your success at <span>Explorin Academy</span></p><br>
+            <p class="hero-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aliquam <br> nam et totam  ipsum mollitia ex nesciunt  recusandaequaerat, eum, <br> quae veritatis nobis saepe quod consectetur,  nulla architecto! <br>Accusantium, sint!</p>
+               
+        </div>
+            <div class="imgintro">
+                <img  class="selfimg"src="#" alt="">
+            </div>
+    </section>
+
+
+
+    <main>
+       <section class="skill-section">
+        <div class="container">
+            <pre><h1>My <span class="skill">Skills</span></h1></pre>
+            <h2>Here are some of my skills on which I have been working on for the past 2 years</h2>
+            <div class="skillstable">
+                <div class="skill-list">
+                    Data Science
+                </div>
+                <div class="skill-list">
+                    Machine Learning
+                </div>
+                <div class="skill-list">
+                    Html
+                </div>
+                <div class="skill-list">
+                    React
+                </div>
+                <div class="skill-list">
+                   NodeJS
+                </div>
+                <div class="skill-list">
+                    MongoDB 
+                </div><div class="skill-list">
+                   JavaScript
+                </div>
+                <div class="skill-list">
+                    Data Science
+                </div>
+                <div class="skill-list">
+                   Machine Learning
+                </div>
+                <div class="skill-list">
+                    Html
+                </div>
+                <div class="skill-list">
+                    React
+                </div>
+                <div class="skill-list">
+                    NodeJS
+                </div>
+                <div class="skill-list">
+                    MongoDB
+                </div>
+                <div class="skill-list">
+                    JavaScript
+                </div>
+                <div class="skill-list">
+                    CSS
+                </div>
+                <div class="skill-list">
+                    SQL
+                </div>
+                <div class="skill-list">
+                    Firebase
+                </div>
+                
+            </div>
+            </div>
+        </div>
+       </section>
+
+
+
+
+
+
+       <section class="progess-section ">
+            <div class="container">
+                <pre><h1>My Video <span class="skill">Progress</span> </h1></pre>
+                <h2>Here is a quick demo of my progress so far in Web Development!</h2>
+                <span><a class="linkedin" href="#">Visit My Linkedin</a></span>
+            </div>
+            <div class="video">
+                <div class="videolist">
+                    <div class="play"><iframe class="iframe" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=D6ip5bFaX_CwF-Oa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="textvideo"> <h4>Week </h4>
+                        <p class="topic">Topic: Html</p>
+                        <p>With Apna College</p>
+                    </div>
+                </div>
+                <div class="videolist">
+                    <div class="play"><iframe class="iframe" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=D6ip5bFaX_CwF-Oa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="textvideo"> <h4>Week 2 </h4>
+                        <p class="topic">Topic: CSS</p>
+                        <p>With Apna College</p>
+                    </div>
+                </div>
+                <div class="videolist">
+                    <div class="play"><iframe class="iframe" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=D6ip5bFaX_CwF-Oa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    <div class="textvideo"> <h4>Week 3 </h4>
+                        <p class="topic">Topic: JavaScript</p>
+                        <p>With Apna College</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+               
+            </div>
+       </section>
+
+
+
+
+
+
+
+       <section class="project-section">
+        <div class="container"><br><br>
+           <h1>Projects</h1>
+           <h2 class="projectdetail">I have worked on a wide range of projects. Here are some of my projects.</h2>
+           <div class="projectname">
+            <div class="projectnamelist">
+                <div class="projectimg">
+                    <img src="https://www.shutterstock.com/image-photo/asian-teenager-students-doing-robot-600nw-2221748207.jpg" alt="">
+                </div>
+                <div class="projectdescribe">
+                    <h3>Project Name</h3>
+                    <h5>About the project</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur,  maiores animi magni dolor repellendus. Minus, numquam!</p>
+                </div>
+            </div>
+            <div class="projectnamelist">
+                <div class="projectimg">
+                    <img src="https://www.shutterstock.com/image-photo/asian-teenager-students-doing-robot-600nw-2221748207.jpg" alt="">
+                </div>
+                <div class="projectdescribe">
+                    <h3>Project Name</h3>
+                    <h5>About the project</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur,  maiores animi magni dolor repellendus. Minus, numquam!</p>
+                </div>
+            </div>
+            <div class="projectnamelist">
+                <div class="projectimg">
+                    <img src="https://www.shutterstock.com/image-photo/asian-teenager-students-doing-robot-600nw-2221748207.jpg" alt="">
+                </div>
+                <div class="projectdescribe">
+                    <h3>Project Name</h3>
+                    <h5>About the project</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur,  maiores animi magni dolor repellendus. Minus, numquam!</p>
+                </div>
+            </div>
+           </div>
+        </div>
+       </section>
+
+
+
+
+
+       <section class="edu-section">
+        <div class="container">
+           <h1 >Education</h1>
+           <pre><h2>My education has been a journey of self-discovery and growth.
+                                    Here are some details.</h2></pre>
+
+            <div class="education">
+                <div class="educationlist">
+                   <div><h3>Explorin Academy</h3>
+                        <h5 class="year">2023-2024</h5>
+                        <h6>B.Tech | Computer Science</h6> 
+                    </div>
+                        <div>
+                            <div class="img"></div>    
+                        </div>
+                </div>
+                <div class="educationlist">
+                    <div><h3>College Name</h3>
+                        <h5 class="year">2023-2024</h5>
+                        <h6>B.Tech | Computer Science</h6> 
+                    </div>
+                        <div>
+                            <div class="img"></div>    
+                        </div>
+                 </div>
+                 <div class="educationlist">
+                    <div><h3>School Name</h3>
+                        <h5 class="year">2023-2024</h5>
+                        <h6>12th</h6> 
+                     </div>
+                        <div>
+                            <div class="img"></div>   
+                        </div>
+                 </div>
+                 <div class="educationlist">
+                    <div><h3>School Name</h3>
+                        <h5 class="year">2023-2024</h5>
+                        <h6>10th</h6> 
+                    </div>
+                        <div>
+                            <div class="img"></div>  
+                        </div>
+                 </div>
+            </div>                                                        
+        </div>
+       </section>
+    </main>
+     
+  
+
+
+
+
+
+
+
+       
+    <footer>
+        <section class="contact-section">
+        <div class="footer">
+            <div class="footerdetail"><h1>Contact</h1></div>
+            <div class="footerdetail"><h3>Feel free to reach out to me for any questions or opportunities!</h3></div>
+            <div class="social-link">
+                <a href="" class="social-link-list"> <i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="" class="social-link-list"><i class="fas fa-envelope"></i> guptatriyan7@gmail.com</a>
+                <a href="" class="social-link-list"><i class="fab fa-github"></i> Github</a>
+            </div>
+            </div>
+        </div>
+            
+    </section>
+    </footer>
+
+</body>
+</html>
